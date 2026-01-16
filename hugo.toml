@@ -50,19 +50,16 @@ buildExpired = false
   
   # Home page - show posts directly with a welcome header
   [params.homeInfoParams]
-    Title = "👋 Welcome to Michael's Blog"
-    Content = "Learning notes and thoughts on tech. Check out my [Portfolio](https://michaelguo.vercel.app)."
+    Title = "👋 Welcome to Michael Guo's Blog"
+    Content = "Let's learn and build together! Check out my [Portfolio](https://michaelguo.vercel.app)."
 
   # Social icons
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/michaelpersonal"
   [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://linkedin.com/in/"
-  [[params.socialIcons]]
-    name = "email"
-    url = "mailto:your@email.com"
+    name = "x"
+    url = "https://x.com/MichaelZSGuo"
 
 # Main menu
 [menu]
