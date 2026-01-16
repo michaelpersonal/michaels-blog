@@ -1,0 +1,109 @@
+baseURL = "https://michaels-blog.vercel.app/"
+languageCode = "en-us"
+title = "Michael's Blog"
+theme = "PaperMod"
+
+# Enable emoji support
+enableEmoji = true
+
+# Generate robots.txt
+enableRobotsTXT = true
+
+# Build settings
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# Pagination
+[pagination]
+  pagerSize = 10
+
+# Minify output
+[minify]
+  minifyOutput = true
+
+[params]
+  # Site description
+  description = "Learning notes and thoughts"
+  author = "Michael"
+  
+  # Show reading time
+  ShowReadingTime = true
+  
+  # Show share buttons
+  ShowShareButtons = true
+  
+  # Show post navigation
+  ShowPostNavLinks = true
+  
+  # Show breadcrumbs
+  ShowBreadCrumbs = true
+  
+  # Show code copy buttons
+  ShowCodeCopyButtons = true
+  
+  # Show table of contents
+  ShowToc = true
+  
+  # Default theme (light/dark/auto)
+  defaultTheme = "auto"
+  
+  # Home page profile
+  [params.profileMode]
+    enabled = true
+    title = "Michael's Blog"
+    subtitle = "Learning notes and thoughts on tech"
+    imageUrl = ""
+    imageTitle = ""
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "/posts/"
+    [[params.profileMode.buttons]]
+      name = "Portfolio"
+      url = "https://michael-terminal.vercel.app"
+
+  # Social icons
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/michaelpersonal"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:your@email.com"
+
+# Main menu
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "/archive/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 40
+
+# Syntax highlighting
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNos = false
+    codeFences = true
+    guessSyntax = true
+
+# Output formats for search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
