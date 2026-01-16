@@ -48,19 +48,10 @@ buildExpired = false
   # Default theme (light/dark/auto)
   defaultTheme = "auto"
   
-  # Home page profile
-  [params.profileMode]
-    enabled = true
-    title = "Michael's Blog"
-    subtitle = "Learning notes and thoughts on tech"
-    imageUrl = ""
-    imageTitle = ""
-    [[params.profileMode.buttons]]
-      name = "Posts"
-      url = "/posts/"
-    [[params.profileMode.buttons]]
-      name = "Portfolio"
-      url = "https://michaelguo.vercel.app"
+  # Home page - show posts directly with a welcome header
+  [params.homeInfoParams]
+    Title = "👋 Welcome to Michael's Blog"
+    Content = "Learning notes and thoughts on tech. Check out my [Portfolio](https://michaelguo.vercel.app)."
 
   # Social icons
   [[params.socialIcons]]
