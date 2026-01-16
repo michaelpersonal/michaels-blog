@@ -1,4 +1,4 @@
-baseURL = "https://michaels-blog.vercel.app/"
+baseURL = "https://michaelguoblog.vercel.app/"
 languageCode = "en-us"
 title = "Michael's Blog"
 theme = "PaperMod"
@@ -60,7 +60,7 @@ buildExpired = false
       url = "/posts/"
     [[params.profileMode.buttons]]
       name = "Portfolio"
-      url = "https://michael-terminal.vercel.app"
+      url = "https://michaelguo.vercel.app"
 
   # Social icons
   [[params.socialIcons]]
