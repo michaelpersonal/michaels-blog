@@ -40,6 +40,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add content/posts/ static/images/
-          git diff --staged --quiet || git commit -m "Sync posts from Notion"
-          git push
+          mkdir -p content/posts static/images/posts
+          git add content/posts/ static/images/ || true
+          if ! git diff --staged --quiet; then
+            git commit -m "Sync posts from Notion"
+            git push
+          else
+            echo "No changes to commit"
+          fi
