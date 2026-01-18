@@ -1,5 +1,5 @@
 ---
-title: "A Practical Guide to Parallel AI Development"
+title: "A Practical Guide to Parallel AI Development with Multiple Agents"
 date: 2026-01-18
 draft: false
 tags: ["AI coding agent", "parallel coding agent"]
