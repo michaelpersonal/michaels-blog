@@ -36,24 +36,7 @@ The core design choice was not “add more bots.”
 It was: separate role, memory, and operating policy by agent.
 
 
-```mermaid
-flowchart TD
-    U[User] --> M[Chief / main<br/>Chief-of-Staff]
-
-    M -->|handoff| K[KOL]
-    M -->|handoff| C[Builder / coder]
-    M -->|handoff| P[Companion / private]
-
-    K -->|result artifact| H[(Shared handoff store)]
-    C -->|result artifact| H
-    P -->|result artifact| H
-    M -->|synthesis| H
-
-    T1[Telegram default] --> M
-    T2[Telegram kol] --> K
-    T3[Telegram coder] --> C
-    T4[Telegram care] --> P
-```
+![image.png](/images/posts/openclaw-agent-team-1.png)
 
 
 ## Context Isolation: The Real Boundary
